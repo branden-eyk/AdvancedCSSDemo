@@ -6,16 +6,21 @@
 }
 
 :root.light{
-    --checkIt-btn-bg:#E4E9EE;
-    --checkIt-btn-clr: #354756;
+    --checkIt-bg:#E4E9EE;
+    --checkIt-clr: #354756;
 }
 
 :root.dark{
-    --checkIt-btn-bg:#354756;
-    --checkIt-btn-clr: #FFFFFF;
+    --checkIt-bg:#354756;
+    --checkIt-clr: #FFFFFF;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 .hero{
+    position:relative;
     height:95vh;
     width: 100vw;
 }
@@ -38,7 +43,7 @@
 }
 
 .hero_text{
-    position: relative;
+    position: absolute;
     z-index: 100;
     margin: 0rem;
     color:#FFFFFF;
@@ -50,7 +55,9 @@
     text-transform: uppercase;
     font-family: Inter;
     font-size: 2.4rem;
-    top: 190px;
+    top: 19rem;
+    left: 50%;
+    transform: translateX(-50%);
     font-weight: 700;
     letter-spacing: 0.5rem;
 }
@@ -58,11 +65,13 @@
 .hero_text--h1{
     font-family: Lato;
     font-size: 5.4rem;
-    top:222px;
+    top:22.2rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .hero_btn{
-    position: relative;
+    position: absolute;
     z-index: 100;
     font-size: 2rem;
     font-family: Inter;
@@ -73,7 +82,29 @@
     line-height: 3.53rem;
     left: 50%;
     transform: translateX(-50%);
-    top: 564px;
-    background-color: var(--checkIt-btn-bg);
-    color: var(--checkIt-btn-clr);
+    top: 56.4rem;
+    background-color: var(--checkIt-bg);
+    color: var(--checkIt-clr);
 }
+
+.sticky{
+    position:sticky;
+    padding-left: 12rem;
+}
+
+.sticky_btn{
+    font-size: 1.6rem;
+    font-family: Inter;
+    font-weight: 700;
+    padding: 1.2rem 2.9rem 1.2rem 2.9rem;
+    border: #354756 solid 0.2rem;
+    color: #354756;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    margin: 2.2rem 1rem 2.7rem 0rem;
+}
+
+.sticky_btn--inactive{
+    opacity: 0.5;
+}
+
