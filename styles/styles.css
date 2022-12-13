@@ -6,13 +6,14 @@
 }
 
 :root.light{
-    --checkIt-bg:#E4E9EE;
-    --checkIt-clr: #354756;
+    --main-bg: #E4E9EE;
+    --main-clr: #354756;
+
 }
 
 :root.dark{
-    --checkIt-bg:#354756;
-    --checkIt-clr: #FFFFFF;
+    --main-bg:#354756;
+    --main-clr: #FFFFFF;
 }
 
 button:hover{
@@ -83,8 +84,8 @@ button:hover{
     left: 50%;
     transform: translateX(-50%);
     top: 56.4rem;
-    background-color: var(--checkIt-bg);
-    color: var(--checkIt-clr);
+    background-color: var(--main-bg);
+    color: var(--main-clr);
 }
 
 .sticky{
@@ -108,3 +109,7 @@ button:hover{
     opacity: 0.5;
 }
 
+.about{
+    background-color: var(--main-bg);
+    color: var(--main-clr);
+}
