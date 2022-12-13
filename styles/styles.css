@@ -112,4 +112,31 @@ button:hover{
 .about{
     background-color: var(--main-bg);
     color: var(--main-clr);
+    position:relative;
+    padding-top: 4.9rem;
+    padding-left: 20%;
+    padding-bottom: 8.5rem;
+}
+
+.about_title{
+    font-family: Lato;
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin: 0rem;
+    line-height: 5.649rem;
+}
+
+.about_text{
+    font-family: Inter;
+    font-size: 2rem;
+    font-weight: 400;
+    max-width: 64.1rem;
+    line-height: 3.53rem;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+.about_img{
+    position:absolute;
+    top: -6.5rem;
+    right: 20%;
 }
