@@ -130,7 +130,7 @@ button:hover{
     font-family: Inter;
     font-size: 2rem;
     font-weight: 400;
-    max-width: 64.1rem;
+    max-width: 50%;
     line-height: 3.53rem;
     margin: 1rem 0rem 0rem 0rem;
 }
