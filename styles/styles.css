@@ -8,12 +8,13 @@
 :root.light{
     --main-bg: #E4E9EE;
     --main-clr: #354756;
-
+    --sticky-bg: #F8F8F8
 }
 
 :root.dark{
     --main-bg:#354756;
     --main-clr: #FFFFFF;
+    --sticky-bg: #2B3237;
 }
 
 button:hover{
@@ -91,6 +92,7 @@ button:hover{
 .sticky{
     position:sticky;
     padding-left: 12rem;
+    background-color: var(--sticky-bg);
 }
 
 .sticky_btn{
