@@ -91,6 +91,8 @@ button:hover{
 
 .sticky{
     position:sticky;
+    top:0;
+    z-index: 100;
     padding-left: 12rem;
     background-color: var(--sticky-bg);
 }
@@ -118,6 +120,7 @@ button:hover{
     padding-top: 4.9rem;
     padding-left: 20%;
     padding-bottom: 8.5rem;
+    margin-bottom: 5.7rem;
 }
 
 .about_title{
@@ -139,6 +142,36 @@ button:hover{
 
 .about_img{
     position:absolute;
+    z-index: 101;
     top: -6.5rem;
     right: 20%;
+}
+
+.cards{
+    display: grid;
+    gap: 5rem 5rem;
+    grid-template-rows: repeat(2, 26.3rem);
+    grid-template-columns: repeat(5, 20rem);
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.card{
+    width: 20rem;
+    height: 26.3rem;
+    border-radius: 2rem;
+}
+
+.card--bookend{
+    border: 1rem solid var(--main-bg);
+    width: 18rem;
+    height: 24.3rem;
+}
+
+.card--b{
+    background-color: #88A9C5;
+}
+
+.card--a{
+    background-color: var(--main-bg);
 }
